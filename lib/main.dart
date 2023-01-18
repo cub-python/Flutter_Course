@@ -26,9 +26,12 @@ class MyFlutterApp extends StatelessWidget {
           ),
           // ignore: prefer_const_constructors
           body: Center(
+
             // ignore: prefer_const_constructors
             child: Image(
               image: const AssetImage('assets/reprod.jpg')),     
+            child: Image(
+              image: AssetImage('assets/reprod.jpg')),     
             // Image(image: NetworkImage('https://storge.pic2.me/cm/5120x2880/704/585847e883b48.jpg'),)
     
             //  настр: кнопок --OutlinedButton.icon(label: const Text('нажми'), onPressed: () {}, icon: Icon(Icons.adb_sharp),)
@@ -49,6 +52,40 @@ class MyFlutterApp extends StatelessWidget {
             },
             child: const Text('Click'),
           ),
+        ));
+  }
+}
+
+    // ignore: prefer_const_constructors
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme:
+            ThemeData(primaryColor: const Color.fromARGB(255, 207, 188, 211)),
+        home: Scaffold(
+          appBar: AppBar(
+              title: const Text('Header of main screan'), centerTitle: true),
+
+          // ignore: prefer_const_constructors
+          body: Container(
+              // ignore: prefer_const_constructors
+              child: Center(
+                  child: const Text(
+            'Flutter App',
+            style: TextStyle(
+                fontSize: 40.0,
+                color: Colors.green,
+                fontFamily: 'Times New Roman'),
+          ))),
+          bottomNavigationBar: Container(
+              height: 40.0,
+              color: Colors.blueGrey,
+              // ignore: prefer_const_constructors
+              child: Center(
+                  child: const Text("Footer of main screan",
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.white,
+                      )))),
         ));
   }
 }
