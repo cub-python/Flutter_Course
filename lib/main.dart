@@ -26,6 +26,10 @@ class MyFlutterApp extends StatelessWidget {
           ),
           // ignore: prefer_const_constructors
           body: Center(
+
+            // ignore: prefer_const_constructors
+            child: Image(
+              image: const AssetImage('assets/reprod.jpg')),     
             child: Image(
               image: AssetImage('assets/reprod.jpg')),     
             // Image(image: NetworkImage('https://storge.pic2.me/cm/5120x2880/704/585847e883b48.jpg'),)
@@ -51,6 +55,7 @@ class MyFlutterApp extends StatelessWidget {
         ));
   }
 }
+
     // ignore: prefer_const_constructors
     return MaterialApp(
         debugShowCheckedModeBanner: false,
@@ -84,3 +89,4 @@ class MyFlutterApp extends StatelessWidget {
         ));
   }
 }
+
